@@ -1,0 +1,20 @@
+@startuml
+
+skinparam class {
+  BackgroundColor #ebebeb
+  ArrowColor      #333
+  BorderColor     #333
+}
+
+skinparam lineType ortho
+
+package md.application {
+  class Kernel {
+    + environment: str
+    + root_directory: str
+    + configuration_directory: str
+    + cache_directory: str
+  }
+}
+
+@enduml
